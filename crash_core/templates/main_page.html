@@ -3,7 +3,8 @@
 {% block title %}Main{% endblock title %}
 {% block content %}
 <h2>Последний загруженный кадр</h2>
+<p>
 <p>Имя: {{f.file_name}}</p>
-<p>Дата: {{f.update_date}}</p>
+<p>Дата: {{f.update_date | date:"d.m.Y H:i:s.u T"}}</p>
 <img alt="Embedded Image" src="data:image;base64,{{ f.img }}" width="800" />
 {% endblock content %}
