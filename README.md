@@ -15,6 +15,6 @@ By deafault it starts on http://127.0.0.1:8000/
 
 ### Upload photos
 ```
-in another session
+# in another session
 python manage.py upload_file <count of files you want to upload>
 ```
